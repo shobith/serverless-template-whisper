@@ -18,7 +18,7 @@ def run(file):
 
     print(res.text)
 
-files = ["samples/one.wav", "samples/two.wav", "samples/three.wav", "samples/four.wav", "samples/five.wav", "samples/six.wav", "samples/seven.wav", "samples/eight.wav", "samples/nine.wav"]
+files = ["samples/one.wav", "samples/two.wav", "samples/three.wav", "samples/four.wav", "samples/five.wav", "samples/six.wav", "samples/seven.wav", "samples/eight.wav"]
 
 for f in files:
     run(f)
