@@ -18,7 +18,7 @@ def run(file):
 
     print(res.text)
 
-files = ["../whisper.cpp/chanakya/one.wav", "../whisper.cpp/chanakya/two.wav", "../whisper.cpp/chanakya/three.wav", "../whisper.cpp/chanakya/four.wav", "../whisper.cpp/chanakya/five.wav", "../whisper.cpp/chanakya/six.wav", "../whisper.cpp/chanakya/seven.wav", "../whisper.cpp/chanakya/eight.wav", "../whisper.cpp/chanakya/nine.wav"]
+files = ["samples/one.wav", "samples/two.wav", "samples/three.wav", "samples/four.wav", "samples/five.wav", "samples/six.wav", "samples/seven.wav", "samples/eight.wav", "samples/nine.wav"]
 
 for f in files:
     run(f)
