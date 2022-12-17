@@ -25,11 +25,10 @@ def inference(model_inputs:dict) -> dict:
     with open('input.mp3','wb') as file:
         file.write(mp3Bytes.getbuffer())
 
-    options = dict(language="en", beam_size=5, best_of=5)
-    transcribe_options = dict(task="transcribe", **options)
+    options = dict(task="transcribe", language="en", beam_size=5, best_of=5, temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
 
     # Run the model
-    result = model.transcribe("input.mp3", **transcribe_options)
+    result = model.transcribe("input.mp3", **options)
 
     output = {"text":result["text"]}
     os.remove("input.mp3")
