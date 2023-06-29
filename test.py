@@ -15,7 +15,9 @@ def run(file):
     model_payload = {"mp3BytesString":mp3}
 
     res = requests.post("http://100.81.121.129:8000/",json=model_payload)
+    # res = requests.post("http://localhost:8000/", json=model_payload)
 
+    print(file.name)
     print(res.text)
 
 files = ["samples/one.wav", "samples/two.wav", "samples/three.wav", "samples/four.wav", "samples/five.wav", "samples/six.wav", "samples/seven.wav", "samples/eight.wav", "samples/nine.wav", "samples/ten.wav", "samples/eleven.wav"]
